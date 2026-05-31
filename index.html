@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="Assets/Logo.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game-On</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a href="https://hackclub.com/"><img
+      style="position: absolute; top: 0; left: 10px; border: 0; width: 180px; z-index: 999;"
+      src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club" /></a>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="requirements.html">Requirements</a></li>
+        <li><a href="get-started.html">Get Started</a></li>
+        <li><a href="">Gallery</a></li>
+      </ul>
+    </nav>
+    <br>
+    <img src="Assets/Logo.jpg" alt="Game-On" />
+    <h1>
+      <div id="app">Game-On</div>
+    </h1>
+    <br>
+    <p class="tagline">YS: A game made in your favorite game engine (Use Godot if you are beginner)</p>
+    <p class="tagline">WS: Get free food!</p>
+    <div class="button-container">
+      <a href="https://submit.hackclub.com/">
+        <button>Submit as an Individual!</button>
+      </a>
+      <a href="https://forms.hackclub.com/">
+        <button>Submit as a Workshop Member!</button>
+      </a>
+      <br>
+      <a href="https://forms.hackclub.com/">
+        <button>Run a Club Workshop!</button>
+      </a>
+      <a href="get-started.html">
+        <button>Get Started Guide!</button>
+      </a>
+      <br>
+    </div>
+  </header>
+
+  <main>
+    <section class="gameon-intro">
+      <h2>Who Can Participate?</h2>
+      <h3>All Hack Clubbers who are 18 or under, or still in high school, can join this event!</h3>
+      <h2>What Is Game-On?</h2>
+      <h3>Game-On is a game development event where you can create and submit your own game for a chance to win food grant!
+         Whether you're a beginner or an experienced game developer, this event is open to all skill levels.
+        See the <a href="/requirements.html"><b>requirements page</a></b> for more information.
+      </h3>
+      <h2>Any Questions?</h2>
+      <h3>Join the <a href="https://app.slack.com/client/T0266FRGM/C08QBKX5WCD">#game-on</a> channel on Hack Club Slack
+        to connect with fellow participants and mentors!</h3>
+      <br>
+      <h3><strong>Club/Event Questions?:</strong> Send your question in <a
+          href="https://app.slack.com/client/T0266FRGM/C08QBKX5WCD">#game-on</a> on the Hack Club Slack for quick
+        assistance.</h3>
+      <br>
+    </section>
+  </main>
+  <footer>
+    <br>
+    Made by Gunjit Gyawali | Funded by Hack Club 
+    <br>
+  </footer>
+</body>
+<script type="text/javascript" src="//unpkg.com/typewriter-effect/dist/core.js"></script>
+<script>
+  const isMotionReduced =
+    window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+    window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+  if (!isMotionReduced) {
+    var app = document.getElementById('app');
+
+    var typewriter = new Typewriter(app, {
+      loop: true
+    });
+
+    typewriter.typeString('Game-On')
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString('Game-On')
+      .pauseFor(2500)
+      .deleteAll()
+      .start();
+  }
+</script>
+
+</html>
